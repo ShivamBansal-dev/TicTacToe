@@ -1,0 +1,118 @@
+
+* {
+    caret-color: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #001f23, #014a58);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input, textarea {
+    caret-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 7rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#left-header-btn {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mid-header-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#right-header-btns {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    background-color: rgb(1, 74, 88);
+    color: rgb(187, 185, 185);
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(1, 25, 29);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid rgb(1, 74, 88);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.result {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result-message {
+    font-size: 1.5rem;
+    color: rgb(1, 25, 29);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="left-header-btn">
+                <button class="btn" id="reset-btn">Reset Board</button>
+            </div>
+            <h1 id="mid-header-text">Tic Tac Toe</h1>
+            <div id="right-header-btns">
+                <button class="btn" id="pvp-btn">PVP</button>
+                <button class="btn" id="pvc-btn">PVC</button>
+                <button class="btn" id="easy">Easy</button>
+                <button class="btn" id="medium">Medium</button>
+                <button class="btn" id="hard">Hard</button>
+            </div>
+        </div>
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div class="result">
+            <div class="result" id="result-message"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
